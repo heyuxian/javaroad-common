@@ -17,7 +17,7 @@ public class JsonUtils {
         return MAPPER.readValue(content, clazz);
     }
 
-    public static <T> String jsonString(T t) throws JsonProcessingException {
+    public static <T> String toJson(T t) throws JsonProcessingException {
         return MAPPER.writeValueAsString(t);
     }
 }
